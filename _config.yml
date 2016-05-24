@@ -1,2 +1,3 @@
 name: EBI Jekyll Boilerplate
 markdown: kramdown
+permalink: /updates/:year/:month/:day/:title
