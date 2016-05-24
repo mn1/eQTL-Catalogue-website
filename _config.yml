@@ -1,3 +1,4 @@
 name: EBI Jekyll Boilerplate
 markdown: kramdown
 permalink: /EBI-Boilerplate-Jekyll/updates/:year/:month/:day/:title
+baseurl: /EBI-Boilerplate-Jekyll
