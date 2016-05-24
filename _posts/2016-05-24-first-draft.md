@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: update
 title: "Welcome to the first draft of the Jekyll implementation"
 date: 2016-05-24
 ---
