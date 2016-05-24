@@ -1,6 +1,6 @@
 ---
 layout: update
-title: "Welcome to the first draft of the Jekyll implementation"
+title: "first draft"
 date: 2016-05-24
 ---
 
