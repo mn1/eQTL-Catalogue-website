@@ -1,4 +1,5 @@
 name: EBI Jekyll Boilerplate
 markdown: kramdown
-permalink: /EBI-Boilerplate-Jekyll/updates/:year/:month/:day/:title
+domain: //ebiwd.github.io/
 baseurl: /EBI-Boilerplate-Jekyll
+permalink: /EBI-Boilerplate-Jekyll/updates/:year/:month/:day/:title
