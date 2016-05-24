@@ -1,19 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-	{% include head.html %}
-	<body>
-		<nav>
-    		{% include global_nav.html %}
-    		<ul>
-        		<li><a href="{{ site.baseurl }}/">Home</a></li>
-        		<li><a href="{{ site.baseurl }}/updates">Updates</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-		
-		{{ content }}
-		
-		</div><!-- /.container -->
-		{% include footer.html %}
-	</body>
+  {% include head.html %}
+  <body class="level2"><!-- add any of your classes or IDs -->
+    {% include local_masthead.html %}
+    <div id="content" role="main" class="row">
+    
+      <section>
+
+        <!-- Your menu structure should make a breadcrumb redundant, but if a breadcrump is needed uncomment the below -->
+        <!--
+        <nav aria-label="You are here:" role="navigation">
+          <ul class="breadcrumbs">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Parent</a></li>
+            <li class="disabled">Disabled</li>
+            <li>
+              <span class="show-for-sr">Current: </span> This page
+            </li>
+          </ul>
+        </nav>
+        -->
+
+        <div class="row">
+
+          <div class="medium-12 columns">
+
+          {{ content }}
+
+          </div>
+
+        </div>
+
+        {% include footer.html %}
+
+      </section>
+      
+    </div><!-- /.container -->
+  </body>
 </html>
