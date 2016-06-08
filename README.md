@@ -14,4 +14,4 @@ Edit _config.yml and set your GitHub URL and project name
 
 3. Add content
 - Create new posts in _posts
-- Create new pages by **to do**
+- Create new pages by adding them to the root folder, see sample_page_1.html

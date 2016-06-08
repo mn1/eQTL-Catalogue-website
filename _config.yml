@@ -4,7 +4,7 @@ group: EMBL-EBI Web Development
 email: noreply@ebi.ac.uk
 domain: //ebiwd.github.io
 baseurl: /EBI-Boilerplate-Jekyll
-permalink: /updates/:year/:month/:day/:title
+permalink: pretty
 
 # Build settings
 markdown: kramdown

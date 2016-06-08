@@ -58,7 +58,7 @@
 
           <!-- local-title -->
           <div class="columns medium-7" id="local-title">
-            <h1><a href="{{ site.domain }}{{ site.baseurl }}" title="Back to EBI Jekyll Boilerplate homepage">EBI Jekyll Boilerplate</a></h1>
+            <h1><a href="{{ site.domain }}{{ site.baseurl }}" title="Back to {{ site.name }} homepage">{{ site.name }}</a></h1>
             <h4>An implementation of <a href="http://github.com/ebiwd/EBI-Framework">the EBI Visual Framework  <i class="icon icon-generic small" data-icon="x"></i></a></h4>
           </div>
           <!-- /local-title -->
@@ -66,11 +66,18 @@
           <!-- local-nav -->
               <nav >
                 <ul class="dropdown menu float-left" data-description="navigational" data-dropdown-menu>
-                  <li class="active"><a href="{{ site.domain }}/{{ site.baseurl }}">Overview</a></li>
-                  <li class=""><a href="{{ site.domain }}/{{ site.baseurl }}/updates">Boilerplate updates</a></li>
-                  <li><a href="https://github.com/ebiwd/EBI-Boilerplate-Jekyll/issues">Support <i class="icon icon-generic" data-icon="x"></i></a></li>
+                  {% comment %}
+                  We construct the site naviagion by loading a list of the site's pages
+                  and filtering to just those with the front matter of:
+                    group: "in_local_navigation"
+                  and we order by adding
+                    order: 2 (whatever number)
+                  {% endcomment %}
+                  {% assign navigation_list = site.pages | sort:"order" %}
+                  {% assign group = 'in_local_navigation' %}
+                  {% include navigation_list.html %}
                 </ul>
-                <ul class="menu dropdown float-right" data-dropdown-menu data-description="functional">
+                <!-- <ul class="menu dropdown float-right" data-dropdown-menu data-description="functional">
                   <li class="functional"><a href="#"><i class="icon icon-generic" data-icon="d"></i> Share this</a>
                     <ul class="menu js">
                       <li><a href="#">Item 1A Loooong</a></li>
@@ -97,7 +104,7 @@
                       <li><a href="#">Item 1B</a></li>
                     </ul>
 
-                </ul>
+                </ul> -->
               </nav>
           <!-- /local-nav -->
 
