@@ -39,11 +39,21 @@
 <script type="text/JavaScript">$(document).foundation();</script>
 <script type="text/JavaScript">$(document).foundationExtendEBI();</script>
 
+{% comment %} Custom global JS could go here: {% endcomment %}
+{% for js in site.custom_js %}
+<script src="{{js}}"></script>
+{% endfor %}
+
+{% comment %} Custom Component Scripts (from individual .md files) go here: {% endcomment %}
+{% for js in page.javascript %}
+<script src="{{js}}"></script>
+{% endfor %}
+
 <!-- Google Analytics details... -->
 <!-- Change UA-XXXXX-X to be your site's ID -->
 <!--
 <script>
-  window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+  window._gaq = [['_setAccount','{{site.ga_code}}'],['_trackPageview'],['_trackPageLoadTime']];
   Modernizr.load({
     load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
   });
