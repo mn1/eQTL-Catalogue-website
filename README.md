@@ -28,7 +28,7 @@ Full documentation is [available here](https://help.github.com/articles/quick-st
   * Add a CNAME for www to point to `yourusername.github.io`
   * If you want to point the root domainname.com to gh-pages, set the `A` record to `192.30.252.153`
   * You can also set a second `A` recored to `192.30.252.154`
-  * When you're don it should look like:
+  * When you're done it should look like:
   
    | Record   | Type        | Value  |
    | ---      | ---         | ---    |
