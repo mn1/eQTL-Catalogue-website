@@ -6,7 +6,7 @@ date: 2016-07-14
 
 Want to host with www.yourdomainname.com? Here's what you'll need to do.
 
-<p class="small">Full documentation is [available here](https://help.github.com/articles/quick-start-setting-up-a-custom-domain/).</p>
+<p class="small">Full documentation is <a href="https://help.github.com/articles/quick-start-setting-up-a-custom-domain/">available here</a>.</p>
 
 1. Configure the gh-pages branch
   * Create a `CNAME` file
