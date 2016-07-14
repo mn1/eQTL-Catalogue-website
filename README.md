@@ -18,6 +18,8 @@ This Jekyll template was designed in mind with GitHub pages, you'll certainly be
   * Create new pages by adding them to the root folder, see sample_page_1.html
 
 ## Configuring your domain name
+Full documentation is [available here](https://help.github.com/articles/quick-start-setting-up-a-custom-domain/).
+
 1. Configure the gh-pages branch
   * Create a `CNAME` file
   * Add `yourdomainname.com` to that file
