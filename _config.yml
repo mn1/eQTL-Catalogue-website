@@ -15,5 +15,10 @@ permalink: pretty
 # - "{{site.baseurl}}/static/js/ANOTHER-CSS-COMPONENTS.js"
 ga_code: 'UA-XXXXX-X'
 
+# Allow redirects
+# https://help.github.com/articles/redirects-on-github-pages/
+gems:
+  - jekyll-redirect-from
+
 # Build settings
 markdown: kramdown
