@@ -15,10 +15,23 @@ permalink: pretty
 # - "{{site.baseurl}}/static/js/ANOTHER-CSS-COMPONENTS.js"
 ga_code: 'UA-XXXXX-X'
 
+
+# root repo for this project
+repo:        "https://github.com/ebiwd/EBI-Pattern-library"
+# baseurl: in this case the gh-pages subfolder
+domain:      //ebiwd.github.io
+baseurl:     /EBI-Pattern-library
+#port: 4000
+source:      .
+destination: ./_site
+exclude:     [node_modules, .sass-cache, gulpfile.js, package.json, HOWTO.md]
+#plugins:     ./_plugins
+future:      false
+lsi:         false
+markdown:    kramdown
+highlighter: rouge
+
 # Allow redirects
 # https://help.github.com/articles/redirects-on-github-pages/
 gems:
   - jekyll-redirect-from
-
-# Build settings
-markdown: kramdown
