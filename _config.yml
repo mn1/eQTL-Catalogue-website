@@ -15,7 +15,6 @@ permalink: pretty
 # - "{{site.baseurl}}/static/js/ANOTHER-CSS-COMPONENTS.js"
 ga_code: 'UA-XXXXX-X'
 
-
 # root repo for this project
 repo:        "https://github.com/ebiwd/EBI-Pattern-library"
 source:      .
