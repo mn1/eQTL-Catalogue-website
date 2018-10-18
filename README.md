@@ -36,4 +36,18 @@ Full documentation is [available here](https://help.github.com/articles/quick-st
    | @        | A           | 192.30.252.154  |
    | WWW      | CNAME       | your_github_username.github.io  |
 
-  
+
+## Local development with Docker
+Running `docker-compose up` will bring up a Jekyll site locally. It's fairly representative of the GitHub/GitLab pages build.
+
+## Deploying to GitLab / GitLab Pages
+A couple of minor tweaks are needed to make this run on GitLab.
+
+1. Clone this repo
+2. Rename this branch from `gh-pages` to `pages`.
+3. Comment out the `jekyll-redirect-from` plugin in `config.yml.
+   NB. The redirect functionality demonstrated in `/_posts/2017-02-21-redirects.md` will no longer be supported
+4. Update the `config.yml` to set domains/baseurl/repo etc.
+5. Add the Gitlab remote as the new origin and push
+
+The CI process on GitLab should kick off, and deploy to GitLab pages.
