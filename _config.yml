@@ -1,5 +1,5 @@
 # Site settings
-name: EBI Jekyll Boilerplate
+title: EBI Jekyll Boilerplate
 group: EMBL-EBI Web Development
 email: noreply@ebi.ac.uk
 domain: //ebiwd.github.io
@@ -19,7 +19,7 @@ ga_code: 'UA-XXXXX-X'
 repo:        "https://github.com/ebiwd/EBI-Pattern-library"
 source:      .
 destination: ./_site
-exclude:     [node_modules, .sass-cache, gulpfile.js, package.json, HOWTO.md]
+exclude:     [node_modules, .sass-cache, gulpfile.js, package.json, HOWTO.md, docker-compose.yml, .gitlab-ci.yml]
 #plugins:     ./_plugins
 future:      false
 lsi:         false
@@ -28,5 +28,5 @@ highlighter: rouge
 
 # Allow redirects
 # https://help.github.com/articles/redirects-on-github-pages/
-gems:
+plugins:
   - jekyll-redirect-from
