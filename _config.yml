@@ -1,9 +1,9 @@
 # Site settings
-title: EBI Jekyll Boilerplate
-group: EMBL-EBI Web Development
+title: eQTL Catalogue
+group: EMBL-EBI
 email: noreply@ebi.ac.uk
-domain: //ebiwd.github.io
-baseurl: /EBI-Boilerplate-Jekyll
+domain: //dzerbino.github.io
+baseurl: /eQTL Catalogue
 permalink: pretty
 
 # Add custom CSS / JS here
