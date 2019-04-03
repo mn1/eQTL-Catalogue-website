@@ -2,7 +2,7 @@
 title: eQTL Catalogue
 group: EMBL-EBI
 email: noreply@ebi.ac.uk
-domain: //dzerbino.github.io
+domain: //ensembl.github.io
 baseurl: /eQTL-Catalogue-website
 permalink: pretty
 
